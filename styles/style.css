@@ -95,6 +95,14 @@ input:focus {
     height: 1px;
     background-color: #B0BEC5
 }
+.i{
+    display: flex;
+    justify-content: space-between;
+}
+.fa{
+    font-size: 30px;
+    color: white;
+}
 @media screen and (max-width: 752px) {
     .card1 {
         padding-left: 26px
