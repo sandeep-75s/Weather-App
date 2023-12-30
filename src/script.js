@@ -1,3 +1,13 @@
+function handleKeyPress(event) {
+    if (event.keyCode === 13) {
+        findWeather();
+    }
+}
+
+function connectEnterKey() {
+    var searchInput = document.getElementById("search");
+    searchInput.addEventListener("keypress", handleKeyPress);
+}
 getLocation();
 function getLocation() {
     if (navigator.geolocation) {
@@ -82,3 +92,4 @@ function setValues(data) {
     setter.innerHTML = data.current.uv + ` `;
 
 }
+connectEnterKey();
